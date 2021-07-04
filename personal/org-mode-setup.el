@@ -1,4 +1,5 @@
 (use-package org
+  :ensure t
   :defer t
   :config
   (setq org-ellipsis " ▾"
@@ -11,3 +12,8 @@
         org-src-preserve-indentation nil
         org-startup-folded 'content
         org-cycle-separator-lines 2))
+
+(use-package org-bullets
+  :ensure t
+  :config
+  (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1))))
