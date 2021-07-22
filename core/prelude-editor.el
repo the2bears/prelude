@@ -345,9 +345,9 @@ indent yanked text (with prefix arg don't indent)."
 (setq compilation-ask-about-save nil  ; Just save before compiling
       compilation-always-kill t       ; Just kill old compile processes before
                                         ; starting the new one
-      compilation-scroll-output 'first-error ; Automatically scroll to first
+      compilation-scroll-output 'first-error) ; Automatically scroll to first
                                         ; error
-      )
+      
 
 ;; Colorize output of Compilation Mode, see
 ;; http://stackoverflow.com/a/3072831/355252
