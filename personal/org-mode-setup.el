@@ -25,6 +25,8 @@
  :config
  (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1))))
 
+(require 'org-tempo)
+
 (set-face-attribute 'org-document-title nil :font "Iosevka Aile" :weight 'bold :height 1.3)
 (dolist (face '((org-level-1 . 1.8)
                 (org-level-2 . 1.6)
