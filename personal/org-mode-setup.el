@@ -55,3 +55,19 @@
 ;; Get rid of the background on column views
 (set-face-attribute 'org-column nil :background nil)
 (set-face-attribute 'org-column-title nil :background nil)
+
+
+(when (not (file-exists-p "~/.org"))
+  (make-directory "~/.org" t))
+
+(setq org-agenda-files (append (directory-files-recursively "~/org-mode_workspace/" "\\.org$")
+                               (directory-files-recursively "~/.org/" "\\.org$")))
+
+(global-set-key (kbd "C-c c") 'counsel-org-capture)
+
+(setq org-capture-templates '(("t" "Todo [inbox]" entry
+                               (file+headline "~/.org/inbox.org" "Tasks")
+                               "* TODO %i%?")
+                              ("T" "Tickler" entry
+                               (file+headline "~/.org/tickler.org" "Tickler")
+                               "* %i%? \n %U")))
