@@ -20,3 +20,7 @@
  (marginalia-mode))
 
 (setq-default explicit-shell-file-name "/bin/zsh")
+
+;;Maximize on startup - added for GUI Emacs
+(toggle-frame-fullscreen)
+

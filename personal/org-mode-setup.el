@@ -28,10 +28,10 @@
 (require 'org-tempo)
 
 (set-face-attribute 'org-document-title nil :font "Iosevka Aile" :weight 'bold :height 1.3)
-(dolist (face '((org-level-1 . 1.8)
-                (org-level-2 . 1.6)
+(dolist (face '((org-level-1 . 1.6)
+                (org-level-2 . 1.4)
                 (org-level-3 . 1.2)
-                (org-level-4 . 1.0)
+                (org-level-4 . 1.1)
                 (org-level-5 . 1.1)
                 (org-level-6 . 1.1)
                 (org-level-7 . 1.1)
